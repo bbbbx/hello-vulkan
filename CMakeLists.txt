@@ -5,6 +5,7 @@ project(vulkan-tutorial)
 set(CMAKE_CXX_STANDARD 17)
 
 include_directories(
+    ./include
     /usr/local/include # Include Vulkan
     /opt/homebrew/include # Include GLFW, glm
 )
@@ -22,6 +23,12 @@ add_executable(test src/test.cpp)
 file(
     COPY
     ${CMAKE_CURRENT_SOURCE_DIR}/src/shaders
+    DESTINATION
+    ${CMAKE_BINARY_DIR}
+)
+file(
+    COPY
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/textures
     DESTINATION
     ${CMAKE_BINARY_DIR}
 )
