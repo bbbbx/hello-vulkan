@@ -21,9 +21,9 @@ add_executable(test src/test.cpp)
 
 file(
     COPY
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/shaders
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/textures
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/models
+    ${CMAKE_CURRENT_SOURCE_DIR}/shaders
+    ${CMAKE_CURRENT_SOURCE_DIR}/textures
+    ${CMAKE_CURRENT_SOURCE_DIR}/models
     DESTINATION
     ${CMAKE_BINARY_DIR}
 )
